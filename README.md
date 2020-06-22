@@ -1,6 +1,7 @@
 # Pixitar
 
 ![build](https://github.com/ptcodes/pixitar/workflows/build/badge.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ![Pixitar avatar examples](examples/avatars.png)
 
