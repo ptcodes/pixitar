@@ -8,4 +8,5 @@
 /tmp/
 .DS_Store
 *.gem
-
+.envrc
+.coveralls.yml
