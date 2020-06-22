@@ -1,8 +1,10 @@
 # Pixitar
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pixitar`. To experiment with that code, run `bin/console` for an interactive prompt.
+![Pixitar avatar examples](examples/avatars.png)
 
-TODO: Delete this and the text above, and describe your gem
+Pixitar is an avatar generation library written in Ruby. Generate random, male or female avatars.
+
+Inspired by https://github.com/matveyco/8biticon (author of the original image assets). 
 
 ## Installation
 
@@ -22,7 +24,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+avatar = Pixitar::Avatar.new
+avatar.generate_avatar                         " Generates a random with either male or female face and saves it to avatar.png
+avatar.generate_avatar(:male, "avatar.png")    " Generates a random avatar with male face and saves it to avatar.png
+avatar.male_avatar                             " Generates a random avatar with male face and saves it to avatar.png
+avatar.female_avatar                           " Generates a random avatar with female face and saves it to avatar.png
 
 ## Development
 
@@ -32,8 +39,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/pixitar.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/ptcodes/pixitar.
 
 ## License
 
