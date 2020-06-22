@@ -1,5 +1,7 @@
 # Pixitar
 
+![build](https://github.com/ptcodes/pixitar/workflows/build/badge.svg)
+
 ![Pixitar avatar examples](examples/avatars.png)
 
 Pixitar is an avatar generation library written in Ruby. Generate random, male or female avatars.
