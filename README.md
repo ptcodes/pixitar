@@ -30,6 +30,7 @@ avatar.generate_avatar                         " Generates a random with either 
 avatar.generate_avatar(:male, "avatar.png")    " Generates a random avatar with male face and saves it to avatar.png
 avatar.male_avatar                             " Generates a random avatar with male face and saves it to avatar.png
 avatar.female_avatar                           " Generates a random avatar with female face and saves it to avatar.png
+```
 
 ## Development
 
