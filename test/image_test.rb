@@ -6,6 +6,7 @@ class ImageTest < Minitest::Test
   end
 
   def test_initializer_with_default_values
+    assert_equal ChunkyPNG::Image, @image.image_lib
     assert_kind_of ChunkyPNG::Image, @image.image
   end
 

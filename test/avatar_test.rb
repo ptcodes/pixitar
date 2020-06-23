@@ -11,7 +11,7 @@ class PixitarTest < Minitest::Test
 
   def test_initializer_with_default_values
     assert_kind_of Pixitar::Image, @avatar.image
-    assert_equal "images", @avatar.assets_path
+    assert_equal "data/images", @avatar.assets_path
     assert_equal "png", @avatar.image_extention
   end
 
@@ -65,9 +65,9 @@ class PixitarTest < Minitest::Test
   end
 
   def test_path_generation
-    avatar = Pixitar::Avatar.new(Pixitar::Image.new, {assets_path: "images", image_extention: "png"})
+    avatar = Pixitar::Avatar.new(Pixitar::Image.new, {assets_path: "data/images", image_extention: "png"})
     avatar.stub(:gender, :male) do
-      assert_equal "images/male/*.png", avatar.send(:path)
+      assert_equal "data/images/male/*.png", avatar.send(:path)
     end
   end
 end
