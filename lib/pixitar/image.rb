@@ -1,5 +1,3 @@
-require "chunky_png"
-
 module Pixitar
   class Image
     attr_reader :image_lib

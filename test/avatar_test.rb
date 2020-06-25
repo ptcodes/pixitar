@@ -10,7 +10,7 @@ class PixitarTest < Minitest::Test
   end
 
   def test_initializer_with_default_values
-    assert_kind_of Pixitar::Image, @avatar.image
+    assert_instance_of Pixitar::Image, @avatar.image
     assert_equal "data/images", @avatar.assets_path
     assert_equal "png", @avatar.image_extention
   end
