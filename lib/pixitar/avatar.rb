@@ -64,6 +64,7 @@ module Pixitar
     def random_asset_for(face_part)
       parts = assets.grep(/#{face_part}/)
       raise MissingImageFilesError, "Missing #{face_part} image files for #{gender} avatars" if parts.empty?
+
       parts.sample
     end
 

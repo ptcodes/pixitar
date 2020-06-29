@@ -28,6 +28,8 @@ Or install it yourself as:
 ## Usage
 
 ```
+require "pixitar"
+
 avatar = Pixitar::Avatar.new
 avatar.generate_avatar                         " Generates a random with either male or female face and saves it to avatar.png
 avatar.generate_avatar(:male, "avatar.png")    " Generates a random avatar with male face and saves it to avatar.png
@@ -37,11 +39,17 @@ avatar.female_avatar                           " Generates a random avatar with 
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Run `rake test` to run the tests.
 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/ptcodes/pixitar.
+
+1. Fork it (<https://github.com/ptcodes/pixitar.cr/fork>)
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
 
 ## License
 
